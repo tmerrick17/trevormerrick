@@ -1,24 +1,30 @@
 @use '../abstracts' as abst;
 
-.button {
-  text-align: center;
+// .btn {
+//   border-radius: 2rem;
 
-  .button__title {
-    background-color: abst.$primary;
-    border-radius: abst.$border-radius-default;
-    padding: abst.$space-button-outline;
-    text-decoration: none;
-    font-family: abst.$font-primary;
-    font-size: abst.$font-h2-responsive;
-    color: abst.$color-white;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: abst.$transition-color, abst.$transition-background;
-    margin-bottom: abst.$space-subsection-responsive;
+//   &-primary {
+//     background-color: abst.$primary;
+//     color: abst.$color-white;
+//   }
 
-    &:hover {
-      color: abst.$secondary;
-      background-color: abst.$color-white;
-    }
-  }
-}
+//   &-secondary{
+//     outline: 3px solid abst.$primary;
+//     background: transparent;
+
+//     &--white{
+//       outline: 3px solid abst.$color-white;
+//       background: transparent;
+//     }
+//   }
+
+//   &-sm {
+//     padding: abst.$space-btn-sm;
+//     font-size: abst.$font-copy-responsive;
+//   }
+
+//   &-lg {
+//     padding: abst.$space-btn-lg;
+//     font-size: abst.$font-h2-responsive;
+//   }
+// }

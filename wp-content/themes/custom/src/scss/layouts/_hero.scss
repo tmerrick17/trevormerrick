@@ -1,0 +1,15 @@
+@use '../abstracts' as abst;
+
+#home-hero {
+
+  h1 {
+    // margin-top: 5rem;
+    color: abst.$color-white;
+    font-size: abst.$font-h1-responsive;
+  }
+
+  h2 {
+    color: abst.$color-white;
+
+  }
+}

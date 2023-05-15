@@ -1,6 +1,6 @@
 @use '../abstracts' as abst;
 
-.main-home-page.container-fluid {
+.main.container-fluid {
   padding-inline: 0;
-  background-color: abst.$color-white;
+  background-color: #000;
 }

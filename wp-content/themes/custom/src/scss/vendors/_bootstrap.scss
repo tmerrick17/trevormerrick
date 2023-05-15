@@ -1,3 +1,4 @@
+@use '../abstracts' as abst;
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 // Configuration
@@ -43,3 +44,62 @@
 
 // Utilities
 // @import "../../../node_modules/bootstrap/scss/utilities/api";
+
+
+.btn {
+  border-radius: 2rem;
+
+  &-primary {
+    background-color: abst.$primary;
+    color: abst.$color-white;
+
+    &:hover {
+      outline-color: abst.$color-white;
+      color: abst.$primary;
+    }
+
+    &--white {
+      background-color: abst.$color-white;
+      color: abst.$primary;
+    }
+
+    &:hover {
+      outline-color: abst.$color-white;
+      color: abst.$primary;
+    }
+  }
+
+
+  &-secondary{
+    outline: 3px solid abst.$primary;
+    background: transparent;
+    color: abst.$primary;
+
+    &:hover {
+      outline-color: abst.$color-white;
+      color: abst.$color-white;
+    }
+
+    &--white{
+      outline: 3px solid abst.$color-white;
+      background: transparent;
+      color: abst.$color-white;
+
+      &:hover {
+        outline-color: abst.$primary;
+        color: abst.$primary;
+      }
+    }
+  }
+
+  &-sm {
+    padding: abst.$space-btn-y abst.$space-btn-x;
+    font-size: abst.$font-copy-responsive;
+  }
+
+  &-lg {
+    padding: abst.$space-btn-lg;
+    font-size: abst.$font-h2-mobile;
+  }
+
+}

@@ -1,6 +1,9 @@
 <?php get_header(); ?>
 
-  <main class="main-home-page container-fluid">
+  <main class="main container-fluid">
+
+    <?php get_template_part('partials/sections/section', 'hero') ?>
+
 
   </main>
 

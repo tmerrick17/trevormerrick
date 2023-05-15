@@ -3,7 +3,6 @@
 .title {
   box-shadow: abst.$outline-secondary;
   border-radius: abst.$border-radius-default;
-  padding: abst.$space-title-outline;
   font-size: abst.$font-h2-responsive;
   text-transform: uppercase;
   width: fit-content;
@@ -13,8 +12,4 @@
     box-shadow: abst.$outline-white;
     color: abst.$color-white;
   }
-
-  // &--justify-center {
-  //   text-align: center;
-  // }
 }
