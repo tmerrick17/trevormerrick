@@ -61,14 +61,15 @@
     &--white {
       background-color: abst.$color-white;
       color: abst.$primary;
-    }
+      transition: abst.$transition-color;
 
-    &:hover {
-      outline-color: abst.$color-white;
-      color: abst.$primary;
+      &:hover {
+        outline-color: abst.$color-white;
+        background-color: abst.$primary;
+        color: abst.$color-white;
+      }
     }
   }
-
 
   &-secondary{
     outline: 3px solid abst.$primary;
@@ -84,9 +85,11 @@
       outline: 3px solid abst.$color-white;
       background: transparent;
       color: abst.$color-white;
+      transition: abst.$transition-color;
 
       &:hover {
         outline-color: abst.$primary;
+        background-color: abst.$color-white;
         color: abst.$primary;
       }
     }

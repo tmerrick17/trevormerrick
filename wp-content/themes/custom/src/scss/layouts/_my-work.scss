@@ -1,0 +1,8 @@
+@use '../abstracts' as abst;
+
+#my-work {
+  background-color: abst.$primary;
+  color: abst.$color-white;
+
+
+}

@@ -1,6 +1,9 @@
 @use '../abstracts' as abst;
 
-#home-hero {
+#hero-home {
+  padding-top: abst.$space-section-responsive;
+  background-color: #000;
+  margin-bottom: abst.$space-section-responsive;
 
   h1 {
     // margin-top: 5rem;

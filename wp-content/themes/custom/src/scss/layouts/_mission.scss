@@ -1,0 +1,19 @@
+@use '../abstracts' as abst;
+
+#mission {
+  padding-bottom: abst.$space-section-responsive;
+
+  h2 {
+    font-size: abst.$font-h2-responsive;
+    text-align: center;
+    padding-bottom: abst.$space-copy-responsive;
+  }
+
+  p {
+    margin-inline: auto;
+    max-width: 30ch;
+    font-size: abst.$font-copy-responsive;
+    padding-bottom: abst.$space-copy-responsive;
+
+  }
+}
