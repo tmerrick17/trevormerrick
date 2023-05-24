@@ -1,6 +1,8 @@
 @use '../abstracts' as abst;
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
+@import "./abstracts/map-amends";
+
 // Configuration
 // @import "../../../node_modules/bootstrap/scss/functions";
 // @import "../../../node_modules/bootstrap/scss/variables";
@@ -104,5 +106,10 @@
     padding: abst.$space-btn-lg;
     font-size: abst.$font-h2-mobile;
   }
+}
 
+:root {
+  @each $spacer, $value in $spacers {
+    --bootstrap-spacer-#{$spacer}: #{$value};
+  }
 }

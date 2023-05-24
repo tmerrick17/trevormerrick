@@ -1,0 +1,107 @@
+@use '../abstracts' as abst;
+
+#featured {
+  background-color: abst.$primary;
+  color: abst.$color-white;
+  padding-block: calc(abst.$space-section-responsive * 2);
+
+
+  h2 {
+    text-align: center;
+    font-size: abst.$font-h2-responsive;
+    padding-bottom: abst.$space-subsection-responsive;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+    padding-bottom: abst.$space-copy-responsive;
+  }
+
+  p {
+    line-height: 4rem;
+  }
+
+  img {
+    border-radius: 10px;
+    box-shadow: abst.$drop-shadow-default;
+  }
+
+  .featured {
+
+    &__intro {
+      // padding-bottom: abst.$space-subsection-responsive;
+
+      &__statements {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__wrapper {
+
+          div {
+            font-size: 3rem;
+            margin-bottom: abst.$space-subsection-responsive;
+          }
+        }
+      }
+
+      &__header {
+        padding-bottom: calc(abst.$space-subsection-responsive * 2);
+
+        &__title {
+          padding-bottom: 1rem;
+        }
+
+        &__url {
+          padding-bottom: abst.$space-subsection-responsive;
+          font-size: 2.2rem;
+
+          a {
+            text-decoration: none;
+            color: #CA468E;
+            transition: abst.$transition-color;
+
+            :hover {
+              color: abst.$color-white;
+            }
+          }
+        }
+      }
+    }
+
+    &__desktop {
+      display: flex;
+      justify-content: center;
+      margin-bottom: calc(abst.$space-subsection-responsive * 2);
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &__design {
+
+      &__mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: abst.$space-subsection-responsive;
+
+        &__imgs {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          &__img {
+            margin-inline: auto;
+          }
+
+          // img {
+          // }
+        }
+      }
+    }
+
+  }
+}

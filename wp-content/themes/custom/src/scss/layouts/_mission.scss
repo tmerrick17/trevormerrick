@@ -1,7 +1,7 @@
 @use '../abstracts' as abst;
 
 #mission {
-  padding-bottom: abst.$space-section-responsive;
+  padding-block: calc(abst.$space-copy-responsive * 2);
 
   h2 {
     font-size: abst.$font-h2-responsive;
@@ -14,6 +14,5 @@
     max-width: 30ch;
     font-size: abst.$font-copy-responsive;
     padding-bottom: abst.$space-copy-responsive;
-
   }
 }

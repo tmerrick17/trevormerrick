@@ -3,7 +3,7 @@
 function add_scripts_styles()
 {
   // Enqueue styles and scripts
-  wp_enqueue_style('main-style', get_template_directory_uri() . '/public/css/main.min.css');
+  wp_enqueue_style('main-style', get_template_directory_uri() . '/style.css');
   wp_enqueue_script('main', get_template_directory_uri() . '/public/js/main.js', array('jquery'), false, true);
   // wp_register_script('bootstrap-script', get_template_directory_uri() . '/public/js/bootstrap.js', array(), false, true);
   wp_enqueue_script('fascript', 'https://kit.fontawesome.com/ac8a13df38.js');

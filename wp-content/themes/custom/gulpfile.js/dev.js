@@ -17,8 +17,10 @@ function scssMin(callback) {
   src(SASS_PATH)
     .pipe(sass().on('error', sass.logError))
     .pipe(postCss([prefix('last 2 versions'), cssNano()]))
-    .pipe(concat('main.min.css'))
-    .pipe(dest('./public/css'));
+    // .pipe(concat('main.min.css'))
+    // .pipe(dest('./public/css'));
+    .pipe(concat('../style.css'))
+    .pipe(dest('../'));
   callback()
 };
 
@@ -30,7 +32,7 @@ function jsMin(callback) {
   callback()
 }
 
-function watchTask(callback) {
+function dev(callback) {
   browserSync.init({
       proxy: 'localhost:8000',
       notify: false
@@ -44,6 +46,4 @@ function watchTask(callback) {
   callback();
 }
 
-exports.scssMin = scssMin;
-exports.jsMin = jsMin;
-exports.watchTask = watchTask;
+module.exports = dev;

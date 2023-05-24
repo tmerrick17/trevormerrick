@@ -59,8 +59,8 @@ $space-btn-sm: 1rem 2rem;
 $space-btn-lg: 1rem 2rem;
 
 
-$space-section-responsive: clamp($space-section-mobile, 15vw, $space-section-desktop);
-$space-subsection-responsive: clamp($space-subsection-mobile, 4vw, $space-subsection-desktop);
+$space-section-responsive: clamp($space-section-mobile, 5vw, $space-section-desktop);
+$space-subsection-responsive: clamp($space-subsection-mobile, 3vw, $space-subsection-desktop);
 $space-copy-responsive: clamp($space-copy-mobile, 2vw, $space-copy-desktop);
 $space-small-responsive: clamp($space-small-mobile, 1vw, $space-small-desktop);
 

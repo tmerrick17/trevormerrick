@@ -7,7 +7,7 @@
 
       <?php get_template_part('partials/sections/section', 'mission') ?>
 
-      <?php get_template_part('partials/sections/section', 'my-work') ?>
+      <?php get_template_part('partials/sections/section', 'featured-work') ?>
 
     </div>
   </main>
